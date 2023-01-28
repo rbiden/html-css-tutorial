@@ -8,11 +8,13 @@ $(window).scroll(function() {
 
     if (scrollPercent >= 99) {
         $("#nav-about").addClass('active');
-    } else if (scrollPercent < 99 && scrollPercent > 66) {
+    } else if (scrollPercent < 99 && scrollPercent > 70) {
         $("#nav-demo").addClass('active');
-    } else if (scrollPercent < 66 && scrollPercent > 32) {
+    } else if (scrollPercent < 70 && scrollPercent > 28) {
         $("#nav-categories").addClass('active');
-    } else if (scrollPercent < 35.8) {
+    } else if (scrollPercent < 28) {
         $("#nav-home").addClass('active');
     }
+
+    console.log(scrollPercent);
 });

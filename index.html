@@ -12,7 +12,7 @@
 </head>
 <body>
     <header class="sticky-top">
-        <nav class="navbar navbar-expand-lg bg-white py-3 px-6">
+        <nav class="navbar navbar-expand-lg py-3 px-6">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Markup! &lt/&gt</a>
                 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-toggle">
@@ -41,19 +41,70 @@
             </div>
         </nav>
     </header>
-    <div class="text-primary px-6 bg-light center-horizontal" id="home">
-        <div class="home-content">
+    <div class="text-primary px-6 center-horizontal row" id="home">
+        <div class="home-content col-7">
             <h1>Learn the basics of 
                 HTML and CSS.</h1>
             <h2 class="mt-3">This website is designed for beginners who want to learn the fundamental building blocks of creating a website. We'll cover the basics of HTML, the language used to structure a website, and CSS, the language used to style and layout a website.</h2>
             <a class="btn btn-primary py-3 px-4 mt-5" href="#categories" id="btnGetStarted">Get Started!</a>
         </div>
-        <div class="home-photo mb-4">
+        <div class="home-photo mb-4 col">
             <img src="./styles/images/html-css.png" alt="HTML & CSS" width="420px">
         </div>
     </div>
-    <div class="p-5 bg-primary text-white center-horizontal" id="categories">
-        <h1>Categories</h1>
+    <div class="p-5 bg-primary text-white text-center" id="categories">
+        <h1 class="py-3 mb-5">Categories</h1>
+        <div class="row mt-4">
+            <h2>All about HTML</h2>
+            <div class="col">
+                <img src="/styles/images/div.png" alt="Div" width="60px">
+                Containers
+                <button class="btn btn-secondary">Start</button>
+            </div>
+            <div class="col">
+                <img src="/styles/images/images.png" alt="Div" width="65px">
+                Images
+                <button class="btn btn-secondary">Start</button>
+            </div>
+            <div class="col">
+                <img src="/styles/images/text.png" alt="Div" width="65px">
+                Typography
+                <button class="btn btn-secondary">Start</button>
+            </div>
+            <div class="col">
+                <img src="/styles/images/table.png" alt="Div" width="65px">
+                Tables
+                <button class="btn btn-secondary">Start</button>
+            </div>
+            <div class="col">
+                <img src="/styles/images/input.png" alt="Div" width="65px">
+                Inputs
+                <button class="btn btn-secondary">Start</button>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <h2>All about CSS</h2>
+            <div class="col">
+                <img src="/styles/images/selector.png" alt="Div" width="65px">
+                Selectors
+                <button class="btn btn-secondary">Start</button>
+            </div>
+            <div class="col">
+                <img src="/styles/images/color.png" alt="Div" width="65px">
+                Colors
+                <button class="btn btn-secondary">Start</button>
+            </div>
+            <div class="col">
+                <img src="/styles/images/padd-margin.png" alt="Div" width="65px">
+                Paddings & Margins
+                <button class="btn btn-secondary">Start</button>
+            </div>
+            <div class="col">
+                <img src="/styles/images/pos-display.png" alt="Div" width="65px">
+                Positions & Displays
+                <button class="btn btn-secondary">Start</button>
+            </div>
+        </div>
     </div>
     <div class="p-5 bg-light text-primary center-horizontal" id="demo">
         <h1>Demo</h1>

@@ -3,7 +3,11 @@
 
 $primary: $blue-800;
 $primary-light: $blue-700;
-$box-shadow: 1px -19px 45px 5px rgba(125,121,121,0.75);
+$white: rgb(255, 255, 255);
+$border-radius: 0.4rem;
+$box-shadow: 1px -19px 45px 5px rgb(181, 180, 180);
+$gradient: linear-gradient(90deg, rgba(13,110,253,1) 0%, rgba(255,84,0,1) 74%);
+$gradient-full: linear-gradient(90deg, rgba(13,110,253,1) 0%, rgba(255,84,0,1) 100%);
 
 :root {
     --bs-primary-rgb: 3, 35, 84;
@@ -14,6 +18,7 @@ body {
 }
 
 nav {
+    background-color: $white;
     box-shadow: $box-shadow;
     .container-fluid {
         .navbar-brand {
@@ -25,7 +30,7 @@ nav {
             ul {
                 li {
                     a {
-                        color: $primary-light;
+                        color: $primary;
                     }
                     .active {
                         color: $primary;
@@ -36,34 +41,69 @@ nav {
             }
             form {
                 button {
-                    font-weight: 600;
+                    font-weight: 500;
                 }
             }
         }
     }
-} 
+}
 
-#home, #categories, #demo, #about {
+#home, #demo, #about {
     height: 90vh;
 }
 
 #home {
+    
     .home-content {
         h1 {
             white-space: pre-line;
+            background: $gradient;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
             font-weight: 800;
             font-size: clamp(2.5rem, -1.75rem + 12vw, 4rem);
         }
         h2 {
             white-space: pre-line;
             width: 80%;
+            line-height: 2rem;
             font-weight: 300;
             font-size: clamp(0.9rem, -1.75rem + 12vw, 1.1rem);
         }
         a {
             border: 0;
-            background: linear-gradient(90deg, rgba(13,110,253,1) 0%, rgba(255,84,0,1) 100%);
             font-weight: 600;
+        }
+    }
+}
+
+#categories {
+    h1 {
+        background: $gradient-full;
+        margin-inline: 10rem;
+        border-radius: $border-radius;
+        font-weight: 700;
+        font-size: 3rem;
+    }
+    h2 {
+        font-weight: 700;
+    }
+    .row {
+        .col {
+            @extend .text-primary;
+            @extend .center-vertical;
+            @extend .p-4;
+            border-radius: $border-radius;
+            background-color: $white;
+            font-weight: 700;
+            font-size: 20px;
+            margin: 2rem;
+            gap: 1rem;
+            button {
+                @extend .mt-3;
+                font-weight: 600;
+                padding-inline: 2rem;
+            }
         }
     }
 }

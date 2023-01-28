@@ -7192,7 +7192,7 @@ textarea.form-control-lg {
   display: table-cell !important;
 }
 
-.d-flex, .end-vertical, .start-vertical, .center-vertical, .end-horizontal, .start-horizontal, .center-horizontal {
+.d-flex, .end-vertical, .start-vertical, .center-vertical, #categories .row .col, .end-horizontal, .start-horizontal, .center-horizontal {
   display: flex !important;
 }
 
@@ -7546,7 +7546,7 @@ textarea.form-control-lg {
   justify-content: flex-end !important;
 }
 
-.justify-content-center, .center-vertical, .center-horizontal {
+.justify-content-center, .center-vertical, #categories .row .col, .center-horizontal {
   justify-content: center !important;
 }
 
@@ -7570,7 +7570,7 @@ textarea.form-control-lg {
   align-items: flex-end !important;
 }
 
-.align-items-center, .center-vertical, .center-horizontal {
+.align-items-center, .center-vertical, #categories .row .col, .center-horizontal {
   align-items: center !important;
 }
 
@@ -7772,7 +7772,7 @@ textarea.form-control-lg {
   margin-top: 0.5rem !important;
 }
 
-.mt-3 {
+.mt-3, #categories .row .col button {
   margin-top: 1rem !important;
 }
 
@@ -7888,7 +7888,7 @@ textarea.form-control-lg {
   padding: 1rem !important;
 }
 
-.p-4 {
+.p-4, #categories .row .col {
   padding: 1.5rem !important;
 }
 
@@ -8203,7 +8203,7 @@ textarea.form-control-lg {
 }
 
 /* rtl:end:remove */
-.text-primary {
+.text-primary, #categories .row .col {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
 }
@@ -10996,7 +10996,7 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.center-vertical {
+.center-vertical, #categories .row .col {
   flex-direction: column;
 }
 
@@ -11012,6 +11012,18 @@ textarea.form-control-lg {
   padding-inline: 6rem;
 }
 
+.btn-secondary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: rgba(255,84,0,1);
+  --bs-btn-border-color: rgb(255, 120, 53);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: rgb(255, 120, 53);
+  --bs-btn-hover-border-color: 0;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: rgb(255, 120, 53);
+  --bs-btn-active-border-color: 0;
+}
+
 :root {
   --bs-primary-rgb: 3, 35, 84;
 }
@@ -11021,7 +11033,8 @@ body {
 }
 
 nav {
-  box-shadow: 1px -19px 45px 5px rgba(125, 121, 121, 0.75);
+  background-color: rgb(255, 255, 255);
+  box-shadow: 1px -19px 45px 5px rgb(181, 180, 180);
 }
 nav .container-fluid .navbar-brand, nav .container-sm .navbar-brand, nav .container-md .navbar-brand, nav .container-lg .navbar-brand, nav .container-xl .navbar-brand, nav .container-xxl .navbar-brand {
   color: #052c65;
@@ -11029,7 +11042,7 @@ nav .container-fluid .navbar-brand, nav .container-sm .navbar-brand, nav .contai
   font-size: 25px;
 }
 nav .container-fluid .collapse ul li a, nav .container-sm .collapse ul li a, nav .container-md .collapse ul li a, nav .container-lg .collapse ul li a, nav .container-xl .collapse ul li a, nav .container-xxl .collapse ul li a {
-  color: #084298;
+  color: #052c65;
 }
 nav .container-fluid .collapse ul li .active, nav .container-sm .collapse ul li .active, nav .container-md .collapse ul li .active, nav .container-lg .collapse ul li .active, nav .container-xl .collapse ul li .active, nav .container-xxl .collapse ul li .active {
   color: #052c65;
@@ -11037,26 +11050,53 @@ nav .container-fluid .collapse ul li .active, nav .container-sm .collapse ul li 
   font-weight: 700;
 }
 nav .container-fluid .collapse form button, nav .container-sm .collapse form button, nav .container-md .collapse form button, nav .container-lg .collapse form button, nav .container-xl .collapse form button, nav .container-xxl .collapse form button {
-  font-weight: 600;
+  font-weight: 500;
 }
 
-#home, #categories, #demo, #about {
+#home, #demo, #about {
   height: 90vh;
 }
 
 #home .home-content h1, #home .home-content .h1 {
   white-space: pre-line;
+  background: linear-gradient(90deg, rgb(13, 110, 253) 0%, rgb(255, 84, 0) 74%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-weight: 800;
   font-size: clamp(2.5rem, -1.75rem + 12vw, 4rem);
 }
 #home .home-content h2, #home .home-content .h2 {
   white-space: pre-line;
   width: 80%;
+  line-height: 2rem;
   font-weight: 300;
   font-size: clamp(0.9rem, -1.75rem + 12vw, 1.1rem);
 }
 #home .home-content a {
   border: 0;
-  background: linear-gradient(90deg, rgb(13, 110, 253) 0%, rgb(255, 84, 0) 100%);
   font-weight: 600;
+}
+
+#categories h1, #categories .h1 {
+  background: linear-gradient(90deg, rgb(13, 110, 253) 0%, rgb(255, 84, 0) 100%);
+  margin-inline: 10rem;
+  border-radius: 0.4rem;
+  font-weight: 700;
+  font-size: 3rem;
+}
+#categories h2, #categories .h2 {
+  font-weight: 700;
+}
+#categories .row .col {
+  border-radius: 0.4rem;
+  background-color: rgb(255, 255, 255);
+  font-weight: 700;
+  font-size: 20px;
+  margin: 2rem;
+  gap: 1rem;
+}
+#categories .row .col button {
+  font-weight: 600;
+  padding-inline: 2rem;
 }
