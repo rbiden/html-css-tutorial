@@ -1,0 +1,21 @@
+@import 'custom';
+
+@include media-breakpoint-up(md) {
+    #home {
+        .home-content {
+            padding: 3rem;
+            text-align: left !important;
+            h2 {
+                margin-inline: 0rem;
+                width: 70%;
+            }
+            #btnGetStarted {
+                margin-top: 4rem;
+            }
+        }
+    }
+    .navbar-nav {
+        display: flex;
+        gap: 2rem;
+    }
+}

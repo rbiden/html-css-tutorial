@@ -1,0 +1,40 @@
+@import './bootstrap/scss/bootstrap.scss';
+
+.center-horizontal {
+    @extend .d-flex;
+    @extend .justify-content-center;
+    @extend .align-items-center;
+}
+
+.start-horizontal {
+    @extend .d-flex;
+    @extend .justify-content-start;
+}
+
+.end-horizontal {
+    @extend .d-flex;
+    @extend .justify-content-end;
+}
+
+.center-vertical {
+    @extend .d-flex;
+    @extend .justify-content-center;
+    @extend .align-items-center;
+    flex-direction: column;
+}
+
+.start-vertical {
+    @extend .d-flex;
+    @extend .justify-content-start;
+    flex-direction: column;
+}
+
+.end-vertical {
+    @extend .d-flex;
+    @extend .justify-content-end;
+    flex-direction: column;
+}
+
+.px-6 {
+    padding-inline: 6rem;
+}
