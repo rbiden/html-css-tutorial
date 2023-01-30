@@ -11046,6 +11046,7 @@ textarea.form-control-lg {
 
 :root {
   --bs-primary-rgb: 3, 35, 84;
+  --bs-secondary-rgb: 255,84,0;
 }
 
 body {
@@ -11054,7 +11055,7 @@ body {
 
 nav {
   background-color: rgb(255, 255, 255);
-  box-shadow: 1px -19px 45px 5px rgb(181, 180, 180);
+  box-shadow: 0px 0px 17px -1px rgba(0, 0, 0, 0.75);
 }
 nav .container-fluid .navbar-brand, nav .container-sm .navbar-brand, nav .container-md .navbar-brand, nav .container-lg .navbar-brand, nav .container-xl .navbar-brand, nav .container-xxl .navbar-brand {
   color: #052c65;
@@ -11079,7 +11080,7 @@ nav .container-fluid .collapse form button, nav .container-sm .collapse form but
 
 #home .home-content h1, #home .home-content .h1 {
   white-space: pre-line;
-  background: linear-gradient(90deg, rgb(13, 110, 253) 0%, rgb(255, 84, 0) 74%);
+  background: linear-gradient(90deg, rgb(255, 84, 0) 0%, rgb(13, 110, 253) 70%);
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -11132,6 +11133,7 @@ nav .container-fluid .collapse form button, nav .container-sm .collapse form but
 }
 #demo .demo-content .text-group .text-content {
   position: relative;
+  padding-top: 2rem;
   height: 60vh;
   border-top-left-radius: 0.6rem;
   border-bottom-left-radius: 0.6rem;
@@ -11139,11 +11141,15 @@ nav .container-fluid .collapse form button, nav .container-sm .collapse form but
 #demo .demo-content .text-group .text-content h6, #demo .demo-content .text-group .text-content .h6 {
   white-space: pre-line;
   line-height: 2rem;
-  width: 60%;
+  width: 70%;
 }
-#demo .demo-content .text-group .text-content h6 span, #demo .demo-content .text-group .text-content .h6 span {
+#demo .demo-content .text-group .text-content h6 #header, #demo .demo-content .text-group .text-content .h6 #header {
   font-size: 2rem;
   font-weight: 800;
+}
+#demo .demo-content .text-group .text-content h6 #content, #demo .demo-content .text-group .text-content .h6 #content {
+  border: solid #052c65 3px;
+  transform: translateX(-20%);
 }
 #demo .demo-content .text-group .text-content img {
   position: absolute;

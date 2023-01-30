@@ -20,7 +20,8 @@ $(window).scroll(function() {
 $(document).ready(function() {
     var currentIndex = 0;
     var items = $("#slideshow img");
-    $('.hide-first').hide();
+    items.hide();
+    $('.show-first').show();
     
     setInterval(function() {
         currentIndex ++;

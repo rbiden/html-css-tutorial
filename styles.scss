@@ -4,6 +4,7 @@
 
 :root {
     --bs-primary-rgb: 3, 35, 84;
+    --bs-secondary-rgb: 255,84,0;
 }
 
 body {
@@ -12,7 +13,7 @@ body {
 
 nav {
     background-color: $white;
-    box-shadow: $box-shadow;
+    box-shadow: $box-shadow-black;
     .container-fluid {
         .navbar-brand {
             color: $primary;
@@ -46,7 +47,6 @@ nav {
 }
 
 #home {
-    
     .home-content {
         h1 {
             white-space: pre-line;
@@ -116,17 +116,22 @@ nav {
             }
             .text-content {
                 position: relative;
+                padding-top: 2rem;
                 height: 60vh;
                 border-top-left-radius: 0.6rem;
                 border-bottom-left-radius: 0.6rem;
                 h6 {
-                    span {
+                    white-space: pre-line;
+                    line-height: 2rem;
+                    width: 70%;
+                    #header {
                         font-size: 2rem;
                         font-weight: 800;
                     }
-                    white-space: pre-line;
-                    line-height: 2rem;
-                    width: 60%;
+                    #content {
+                        border: solid $primary 3px;
+                        transform: translateX(-20%);
+                    }
                 }
                 img {
                     position: absolute;
