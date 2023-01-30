@@ -35,8 +35,33 @@
     flex-direction: column;
 }
 
+.space-between {
+    @extend .d-flex;
+    @extend .justify-content-between;
+}
+
 .px-6 {
     padding-inline: 6rem;
+}
+
+.px-7 {
+    padding-inline: 7rem;
+}
+
+.ps-6 {
+    padding-left: 6rem;
+}
+
+.ps-7 {
+    padding-left: 7rem;
+}
+
+.ps-8 {
+    padding-left: 8rem;
+}
+
+.pe-6 {
+    padding-right: 6rem;
 }
 
 .btn-secondary {

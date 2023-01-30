@@ -7192,7 +7192,7 @@ textarea.form-control-lg {
   display: table-cell !important;
 }
 
-.d-flex, .end-vertical, .start-vertical, .center-vertical, #categories .row .col, .end-horizontal, .start-horizontal, .center-horizontal {
+.d-flex, .space-between, .end-vertical, .start-vertical, .center-vertical, #categories .row .col, .end-horizontal, .start-horizontal, .center-horizontal {
   display: flex !important;
 }
 
@@ -7550,7 +7550,7 @@ textarea.form-control-lg {
   justify-content: center !important;
 }
 
-.justify-content-between {
+.justify-content-between, .space-between {
   justify-content: space-between !important;
 }
 
@@ -11012,6 +11012,26 @@ textarea.form-control-lg {
   padding-inline: 6rem;
 }
 
+.px-7 {
+  padding-inline: 7rem;
+}
+
+.ps-6 {
+  padding-left: 6rem;
+}
+
+.ps-7 {
+  padding-left: 7rem;
+}
+
+.ps-8 {
+  padding-left: 8rem;
+}
+
+.pe-6 {
+  padding-right: 6rem;
+}
+
 .btn-secondary {
   --bs-btn-color: #fff;
   --bs-btn-bg: rgba(255,84,0,1);
@@ -11078,6 +11098,9 @@ nav .container-fluid .collapse form button, nav .container-sm .collapse form but
   font-weight: 600;
 }
 
+#categories {
+  padding-block: 5rem;
+}
 #categories h1, #categories .h1 {
   background: linear-gradient(90deg, rgb(13, 110, 253) 0%, rgb(255, 84, 0) 100%);
   margin-inline: 10rem;
@@ -11094,9 +11117,36 @@ nav .container-fluid .collapse form button, nav .container-sm .collapse form but
   font-weight: 700;
   font-size: 20px;
   margin: 2rem;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 #categories .row .col button {
   font-weight: 600;
   padding-inline: 2rem;
+}
+
+#demo {
+  position: relative;
+}
+#demo .demo-content .text-group h1, #demo .demo-content .text-group .h1 {
+  font-weight: 700;
+}
+#demo .demo-content .text-group .text-content {
+  position: relative;
+  height: 60vh;
+  border-top-left-radius: 0.6rem;
+  border-bottom-left-radius: 0.6rem;
+}
+#demo .demo-content .text-group .text-content h6, #demo .demo-content .text-group .text-content .h6 {
+  white-space: pre-line;
+  line-height: 2rem;
+  width: 60%;
+}
+#demo .demo-content .text-group .text-content h6 span, #demo .demo-content .text-group .text-content .h6 span {
+  font-size: 2rem;
+  font-weight: 800;
+}
+#demo .demo-content .text-group .text-content img {
+  position: absolute;
+  right: 1rem;
+  bottom: 0;
 }

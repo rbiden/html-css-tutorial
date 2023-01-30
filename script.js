@@ -15,6 +15,21 @@ $(window).scroll(function() {
     } else if (scrollPercent < 28) {
         $("#nav-home").addClass('active');
     }
-
-    console.log(scrollPercent);
 });
+
+$(document).ready(function() {
+    var currentIndex = 0;
+    var items = $("#slideshow img");
+    $('.hide-first').hide();
+    
+    setInterval(function() {
+        currentIndex ++;
+        if (currentIndex > (items.length - 1)) {
+            currentIndex = 0;
+        }
+        var item = $("#slideshow img").eq(currentIndex);
+        items.hide();
+        item.css("display","block");
+    }, 2000);
+  });
+  
