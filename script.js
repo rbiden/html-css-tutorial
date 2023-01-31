@@ -15,6 +15,8 @@ $(window).scroll(function() {
     } else if (scrollPercent < 28) {
         $("#nav-home").addClass('active');
     }
+
+    //console.log(scrollPercent);
 });
 
 $(document).ready(function() {
