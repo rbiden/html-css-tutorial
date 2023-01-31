@@ -117,21 +117,17 @@ nav {
             .text-content {
                 position: relative;
                 padding-top: 2rem;
-                height: 60vh;
+                height: 55vh;
                 border-top-left-radius: 0.6rem;
                 border-bottom-left-radius: 0.6rem;
-                h6 {
-                    white-space: pre-line;
+                h3 {
+                    font-weight: 700;
+                }
+                #content {
+                    border: solid $primary 3px;
+                    transform: translateX(-20%);
                     line-height: 2rem;
                     width: 70%;
-                    #header {
-                        font-size: 2rem;
-                        font-weight: 800;
-                    }
-                    #content {
-                        border: solid $primary 3px;
-                        transform: translateX(-20%);
-                    }
                 }
                 img {
                     position: absolute;

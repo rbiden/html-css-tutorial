@@ -11032,6 +11032,10 @@ textarea.form-control-lg {
   padding-right: 6rem;
 }
 
+.pb-6 {
+  padding-bottom: 4rem;
+}
+
 .btn-secondary {
   --bs-btn-color: #fff;
   --bs-btn-bg: rgba(255,84,0,1);
@@ -11134,22 +11138,18 @@ nav .container-fluid .collapse form button, nav .container-sm .collapse form but
 #demo .demo-content .text-group .text-content {
   position: relative;
   padding-top: 2rem;
-  height: 60vh;
+  height: 55vh;
   border-top-left-radius: 0.6rem;
   border-bottom-left-radius: 0.6rem;
 }
-#demo .demo-content .text-group .text-content h6, #demo .demo-content .text-group .text-content .h6 {
-  white-space: pre-line;
-  line-height: 2rem;
-  width: 70%;
+#demo .demo-content .text-group .text-content h3, #demo .demo-content .text-group .text-content .h3 {
+  font-weight: 700;
 }
-#demo .demo-content .text-group .text-content h6 #header, #demo .demo-content .text-group .text-content .h6 #header {
-  font-size: 2rem;
-  font-weight: 800;
-}
-#demo .demo-content .text-group .text-content h6 #content, #demo .demo-content .text-group .text-content .h6 #content {
+#demo .demo-content .text-group .text-content #content {
   border: solid #052c65 3px;
   transform: translateX(-20%);
+  line-height: 2rem;
+  width: 70%;
 }
 #demo .demo-content .text-group .text-content img {
   position: absolute;
