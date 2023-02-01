@@ -11036,6 +11036,10 @@ textarea.form-control-lg {
   padding-bottom: 4rem;
 }
 
+.mt-custom-2 {
+  margin-top: 2rem !important;
+}
+
 .btn-secondary {
   --bs-btn-color: #fff;
   --bs-btn-bg: rgba(255,84,0,1);
@@ -11078,10 +11082,9 @@ nav .container-fluid .collapse form button, nav .container-sm .collapse form but
   font-weight: 500;
 }
 
-#home, #demo, #about {
+#home {
   height: 90vh;
 }
-
 #home .home-content h1, #home .home-content .h1 {
   white-space: pre-line;
   background: linear-gradient(90deg, rgb(255, 84, 0) 0%, rgb(13, 110, 253) 70%);
@@ -11155,4 +11158,51 @@ nav .container-fluid .collapse form button, nav .container-sm .collapse form but
   position: absolute;
   right: 1rem;
   bottom: 0;
+}
+
+#slideshow-container {
+  overflow: hidden;
+  width: 400px;
+}
+#slideshow-container #slideshoww {
+  display: flex;
+  width: 100%;
+  white-space: nowrap;
+  transition: transform 0.5s;
+}
+#slideshow-container #slideshoww img {
+  width: 400px;
+  height: 300px;
+  margin-right: 10px;
+}
+
+#about h1, #about .h1 {
+  font-weight: 700;
+}
+#about .row .col h3, #about .row .col .h3 {
+  text-align: center;
+}
+#about .row .col .col-wrapper {
+  font-size: 1.02rem;
+  margin-top: 1.5rem;
+}
+#about .row .col .col-wrapper ul {
+  padding-top: 1rem;
+  padding-left: 0;
+  list-style: none;
+}
+#about .row .col .col-wrapper ul li a {
+  text-decoration: none;
+}
+#about .row .col .fs-6 {
+  font-size: 0.5rem;
+}
+#about .wrapper {
+  background-color: #274c77;
+}
+#about .wrapper h6, #about .wrapper .h6 {
+  font-size: 0.8rem;
+}
+#about .wrapper .socmed-group img {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(20deg) brightness(107%) contrast(99%);
 }

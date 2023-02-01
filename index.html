@@ -18,7 +18,7 @@
                 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-toggle">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse gap-3" id="navbar-toggle">
+                <div class="collapse navbar-collapse" id="navbar-toggle">
                     <ul class="navbar-nav ms-auto gap-3 center-horizontal">
                         <li class="nav-item">
                             <a class="nav-link active" id="nav-home" href="#home">Home</a>
@@ -33,13 +33,13 @@
                             <a class="nav-link" id="nav-about" href="#about">About</a>
                         </li>
                     </ul>
-                    <div class="gap-3 ms-3 center-horizontal button-group">
-                        <form class="d-flex">
-                            <input class="form-control me-2" type="search" placeholder="Search">
-                        </form>
+                    <form class="d-flex ms-4 me-2">
+                        <input class="form-control me-2" type="search" placeholder="Search">
+                    </form>
+                    <form class="center-horizontal gap-3">
                         <button class="btn btn-primary" type="submit">Login</button>
                         <a type="submit">Sign Up</a>
-                    </div>
+                    </form>
               </div>
             </div>
         </nav>
@@ -110,7 +110,7 @@
         </div>
     </div>
     <div class="bg-light text-primary h-100 start-horizontal" id="demo">
-        <div class="demo-content d-flex w-100 py-5">
+        <div class="demo-content d-flex w-100 pt-5 pb-6">
             <div class="col center-horizontal" id="slideshow">
                 <div class="slides">
                     <img class="show-first" src="/styles/images/button.png" alt="Image 1" width="420px">
@@ -131,7 +131,7 @@
                     <h3 class="mb-4">Hello there!</h3>
                     <div class="bg-white mt-2 text-primary p-4 rounded-4" id="content">
                         I assume you are wondering how you are going to start learning HTML and CSS. Well, you've come to the right place. Our website provides comprehensive and easy-to-follow tutorials for beginners. Get started today and create beautiful, dynamic websites with HTML and CSS.
-                        <button class="btn btn-secondary fw-bold mt-4">Follow me!</button>
+                        <button class="btn btn-secondary fw-bold px-4 mt-4">Tutorial</button>
                     </div>
                     
                     <img src="/styles/images/thinking.png" alt="Image 3" width="280px">
@@ -139,8 +139,72 @@
             </div>
         </div>
     </div>
-    <div class="p-5 bg-primary text-white center-horizontal" id="about">
+    <div class="pt-5 gap-5 bg-primary text-white center-vertical" id="about">
         <h1>About</h1>
+        <div class="row w-100 px-7 mx-4">
+            <div class="col">
+                <h3>Links</h3>
+                <div class="col-wrapper text-center">
+                    <ul class="gap-3 d-flex flex-column">
+                        <li>
+                            <a class="text-white" href="#home">Home</a>
+                        </li>
+                        <li>
+                            <a class="text-white" href="#categories">Categories</a>
+                        </li>
+                        <li>
+                            <a class="text-white" href="#demo">How to start?</a>
+                        </li>
+                        <li>
+                            <a class="text-white" href="#about">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col center-vertical">
+                <h3>Contacts</h3>
+                <div class="col-wrapper text-center">
+                    <ul class="gap-3 d-flex flex-column">
+                        <li>
+                            <a class="text-white" href="#">Facebook</a>
+                        </li>
+                        <li>
+                            <a class="text-white" href="#">Instagram</a>
+                        </li>
+                        <li>
+                            <a class="text-white" href="#">Reddit</a>
+                        </li>
+                        <li>
+                            <a class="text-white" href="#">Twitter</a>
+                        </li>
+                        <li>
+                            <a class="text-white" href="#">Github</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col">
+                <h3>Special Thanks to</h3>
+                <div class="col-wrapper mt-custom-2 text-center">
+                    We are grateful for your continued support and the opportunity to serve you. We also extend our sincerest appreciation to those who have provided us with guidance and support along the way. Thank you for being a part of our journey. Your trust and support mean the world to us.
+                </div>
+            </div>
+        </div>
+        <div class="row mx-5 my-4 text-center">
+            <h3>Learn Basics of HTML and CSS</h3>
+            <div class="mt-2 col-wrapper fs-6">
+                This website provides a comprehensive guide for beginners to learn the fundamental concepts of creating a website. It covers topics such as HTML, the markup language used to structure content on a website, and CSS, the stylesheet language used to control the visual presentation of a website. The website offers easy-to-follow tutorials, examples, and interactive exercises to help learners master the basics of HTML and CSS and start building their own websites.
+            </div>
+        </div>
+        <div class="space-between align-items-center px-5 py-3 w-100 wrapper">
+            <h6 class="text-white">Copyright © 2023 Learn Basics of HTML and CSS. All Rights Reserved.</h6>
+            <div class="socmed-group center-horizontal gap-3 text-white">
+                Share Us:
+                <img src="./styles/images/facebook.png" alt="Facebook" width="24px" height="23px">
+                <img src="./styles/images/gmail.png" alt="Gmail" width="28px" height="29px">
+                <img src="./styles/images/github.png" alt="Github" width="24px" height="25px">
+            </div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>

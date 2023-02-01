@@ -34,5 +34,5 @@ $(document).ready(function() {
         items.hide();
         item.css("display","block");
     }, 2000);
-  });
+});
   
